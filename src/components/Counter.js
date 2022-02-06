@@ -5,7 +5,7 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <h1>{this.props.counter}</h1>
+        <h1 className={this.props.counter <= 0 ? 'red' : 'green'}>{this.props.counter}</h1>
       </div>
     )
   }
